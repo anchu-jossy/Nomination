@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioGroup"
+    android:layout_width="match_parent"
+    android:layout_marginTop="40dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioVeryUnfair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_fade_black"
+        android:checked="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        style="@style/bold_headline_smallest"
+        android:text="@string/very_unfair" />
+
+    <RadioButton
+        android:id="@+id/radioUnfair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_fade_black"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        style="@style/bold_headline_smallest"
+        android:text="@string/unfair" />
+
+    <RadioButton
+        android:id="@+id/radioNotSure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_fade_black"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layoutDirection="rtl"
+        style="@style/bold_headline_smallest"
+        android:layout_marginBottom="5dp"
+        android:text="@string/not_sure" />
+
+    <RadioButton
+        android:id="@+id/radioFair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_fade_black"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        style="@style/bold_headline_smallest"
+        android:layout_marginBottom="5dp"
+        android:text="@string/fair" />
+
+    <RadioButton
+        android:id="@+id/radioVeryFair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_fade_black"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        style="@style/bold_headline_smallest"
+        android:text="@string/very_fair" />
+</RadioGroup>

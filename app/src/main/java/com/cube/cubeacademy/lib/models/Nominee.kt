@@ -7,3 +7,6 @@ data class Nominee(
 	@SerializedName("first_name") val firstName: String,
 	@SerializedName("last_name") val lastName: String
 )
+data class NomineeResponse(
+	val data: List<Nominee>
+)

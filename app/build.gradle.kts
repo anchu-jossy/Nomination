@@ -20,7 +20,7 @@ android {
 		testInstrumentationRunner = "com.cube.cubeacademy.di.CustomTestRunner"
 
 		buildConfigField("String", "API_URL", "\"https://cube-academy-api.cubeapis.com/\"")
-		buildConfigField("String", "AUTH_TOKEN", "\"${project.property("authToken")}\"")
+		buildConfigField("String", "AUTH_TOKEN", "\"241|jXsTiSf16RBzETW48bj7tV0ZFpK85riydF2rp907f4441b73\"")
 	}
 
 	buildTypes {
@@ -66,4 +66,8 @@ dependencies {
 	testImplementation("junit:junit:4.13.2")
 	androidTestImplementation("androidx.test.ext:junit:1.1.5")
 	androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+	implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+	implementation("com.google.code.gson:gson:2.10.1")
+
+
 }

@@ -9,17 +9,17 @@ import retrofit2.http.GET
 import retrofit2.http.POST
 
 interface ApiService {
-	@GET("api/nomination")
-	suspend fun getAllNominations(): DataWrapper<List<Nomination>>
+    @GET("api/nomination")
+    suspend fun getAllNominations(): DataWrapper<List<Nomination>>
 
-	@GET("api/nominee")
-	suspend fun getAllNominees(): DataWrapper<List<Nominee>>
-	
-	@FormUrlEncoded
-	@POST("api/nomination")
-	suspend fun createNomination(
-		@Field("nominee_id") nomineeId: String,
-		@Field("reason") reason: String,
-		@Field("process") process: String
-	): DataWrapper<Nomination>
+    @GET("api/nominee")
+    suspend fun getAllNominees(): DataWrapper<List<Nominee>>
+
+    @FormUrlEncoded
+    @POST("api/nomination")
+    suspend fun createNomination(
+        @Field("nominee_id") nomineeId: String,
+        @Field("reason") reason: String,
+        @Field("process") process: String
+    ): DataWrapper<Nomination>
 }
